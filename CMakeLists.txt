@@ -63,13 +63,17 @@ set(SRC
         settings/Settings.h
         settings/Settings.cpp
 
+        #Libs
+        lib/tinyxml2.h
+        lib/tinyxml2.cpp
     )
 
 include_directories(
                     commons
+                    lib
                     m_data_manager/cryptography
                     m_data_manager/data_manager
                     m_data_manager/compression
                     settings)
 
-add_executable(main ${SRC} )	# Создает исполняемый файл с именем main
+add_executable(main ${SRC}  )	# Создает исполняемый файл с именем main

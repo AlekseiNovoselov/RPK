@@ -3,6 +3,12 @@
 
 int main(int argc, char** argv)
 {
-    hello_world();
+
+    DMN_DataManager dataManager;
+    string dataSourceName = dataManager.getDataSourceName();
+    std::cout << dataSourceName << std::endl;
+    //dataManager.parceXml();
+    //doc.LoadFile( "dream.xml" );
+    //dataManager.hello_world();
     return 0;
 }
